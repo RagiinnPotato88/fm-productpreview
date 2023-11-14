@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+img{
+    width: 50%;
+    height: 100%;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif; 
+    opacity: 50%;
+}
+
+.card-preview-container{
+    background-color: white;
+    width: 500px;
+    height: 400px;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+}
+
+.product-info-container{
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px;
+}
+
+.product-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.product-price h1{
+    color: hsl(158, 36%, 37%);
+}
+
+.product-price p{
+    text-decoration: line-through;
+    font-size: 0.8rem;
+}
+
+.product-description{
+    font-size: 0.8rem;
+}
+
+.product-title{
+    margin: 20px 0px;
+}
+
+button{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+}
+
+button img{
+    height: 20px;
+    width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-preview-container{
+        width: 80%;
+        height: fit-content;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image-desktop{
+        display: none;
+    }
+
+    .product-image-mobile{
+        width: 100%;
+    }
+
+    .product-title{
+        font-size: 1.8rem;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+
+    .product-image-mobile{
+        display: none;
+    }
+  }
